@@ -2,16 +2,16 @@ package com.bharath.location.service;
 
 import com.bharath.location.entities.Address;
 import com.bharath.location.entities.Contact;
-import com.bharath.location.entities.Costumer;
+import com.bharath.location.entities.Customer;
 
 import java.util.List;
 
 public interface LocationService {
-    Costumer saveLocation(Costumer costumer);
-    Costumer updateLocation(Costumer costumer);
-    void deleteLocation(Costumer costumer);
-    Costumer getLocationById(long id);
-    List<Costumer> getAllLocations();
+    Customer saveLocation(Customer customer);
+    Customer updateLocation(Customer customer);
+    void deleteLocation(Customer customer);
+    Customer getLocationById(long id);
+    List<Customer> getAllLocations();
 
 
     Address saveAddress(Address address);

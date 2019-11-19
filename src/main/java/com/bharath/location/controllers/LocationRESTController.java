@@ -1,6 +1,6 @@
 package com.bharath.location.controllers;
 
-import com.bharath.location.entities.Costumer;
+import com.bharath.location.entities.Customer;
 import com.bharath.location.repos.CustomerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -16,27 +16,27 @@ public class LocationRESTController {
     CustomerRepository customerRepository;
 
     @GetMapping
-    public List<Costumer> getLocation(){
+    public List<Customer> getLocation(){
        return customerRepository.findAll();
     }
 
     @PostMapping
-    public Costumer createLocation(@RequestBody Costumer costumer){
-        return customerRepository.save(costumer);
+    public Customer createLocation(@RequestBody Customer customer){
+        return customerRepository.save(customer);
     }
 
     @PutMapping
-    public Costumer updateLocation(@RequestBody Costumer costumer){
-        return customerRepository.save(costumer);
+    public Customer updateLocation(@RequestBody Customer customer){
+        return customerRepository.save(customer);
     }
 
     @DeleteMapping
-    public void deleteLocation(@RequestBody Costumer costumer){
-        customerRepository.delete(costumer);
+    public void deleteLocation(@RequestBody Customer customer){
+        customerRepository.delete(customer);
     }
 
     @GetMapping("/{id}")
-    public Optional<Costumer> getLocation(@PathVariable("id") long id){
+    public Optional<Customer> getLocation(@PathVariable("id") long id){
         return customerRepository.findById(id);
     }
 }

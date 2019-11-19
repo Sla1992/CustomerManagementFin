@@ -12,7 +12,7 @@ public class Address {
     private String number;
     private String city;
     private int plz;
-    private long fkcostumer;
+    private long fkcustomer;
 
     public long getIdaddress() {
         return idaddress;
@@ -55,11 +55,11 @@ public class Address {
     }
 
     public long getFkCostumer() {
-        return fkcostumer;
+        return fkcustomer;
     }
 
     public void setFkCostumer(long fkCostumer) {
-        this.fkcostumer = fkCostumer;
+        this.fkcustomer = fkCostumer;
     }
 
 
@@ -71,7 +71,7 @@ public class Address {
                 ", number='" + number + '\'' +
                 ", city='" + city + '\'' +
                 ", plz=" + plz +
-                ", fkCostumer=" + fkcostumer +
+                ", fkcustomer=" + fkcustomer +
                 '}';
     }
 }

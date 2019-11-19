@@ -2,7 +2,7 @@ package com.bharath.location.service;
 
 import com.bharath.location.entities.Address;
 import com.bharath.location.entities.Contact;
-import com.bharath.location.entities.Costumer;
+import com.bharath.location.entities.Customer;
 import com.bharath.location.repos.AdressRepository;
 import com.bharath.location.repos.ContactRepository;
 import com.bharath.location.repos.CustomerRepository;
@@ -24,27 +24,27 @@ public class LocationServiceImpl implements LocationService{
     private ContactRepository repositoryContact;
 
     @Override
-    public Costumer saveLocation(Costumer costumer) {
-        return customerRepository.save(costumer);
+    public Customer saveLocation(Customer customer) {
+        return customerRepository.save(customer);
     }
 
     @Override
-    public Costumer updateLocation(Costumer costumer) {
-        return customerRepository.save(costumer);
+    public Customer updateLocation(Customer customer) {
+        return customerRepository.save(customer);
     }
 
     @Override
-    public void deleteLocation(Costumer costumer) {
-        customerRepository.delete(costumer);
+    public void deleteLocation(Customer customer) {
+        customerRepository.delete(customer);
     }
 
     @Override
-    public Costumer getLocationById(long id) {
+    public Customer getLocationById(long id) {
         return customerRepository.getOne(id);
     }
 
     @Override
-    public List<Costumer> getAllLocations() {
+    public List<Customer> getAllLocations() {
         return customerRepository.findAll();
     }
 

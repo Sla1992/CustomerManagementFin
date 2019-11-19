@@ -11,7 +11,7 @@ public class Contact {
     @Column(name = "businessname")
     private String businessname;
     private String value;
-    private long fkcostumer;
+    private long fkcustomer;
     @Enumerated(EnumType.STRING)
     private Type type;
     @Enumerated(EnumType.STRING)
@@ -43,11 +43,11 @@ public class Contact {
     }
 
     public long getFkcostumer() {
-        return fkcostumer;
+        return fkcustomer;
     }
 
     public void setFkcostumer(long fkcostumer) {
-        this.fkcostumer = fkcostumer;
+        this.fkcustomer = fkcostumer;
     }
 
     public Type getType() {
@@ -70,9 +70,9 @@ public class Contact {
     public String toString() {
         return "Contact{" +
                 "id=" + idcontact +
-                ", businessName='" + businessname + '\'' +
+                ", businessname='" + businessname + '\'' +
                 ", value='" + value + '\'' +
-                ", fkCostumer=" + fkcostumer +
+                ", fkcustomer=" + fkcustomer +
                 ", type=" + type +
                 ", sort=" + sort +
                 '}';

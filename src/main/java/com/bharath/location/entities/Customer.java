@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Entity
-public class Costumer {
+public class Customer {
 
 
     @Id
@@ -17,11 +17,11 @@ public class Costumer {
     private String lastName;
 
     @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)
-    @JoinColumn(name = "fkcostumer")
+    @JoinColumn(name = "fkcustomer")
     private List<Address> addressList = new ArrayList<>();
 
     @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)
-    @JoinColumn(name = "fkcostumer")
+    @JoinColumn(name = "fkcustomer")
     private List<Contact> contactList = new ArrayList<>();
 
     public long getId() {

@@ -11,13 +11,13 @@
 <form action="saveLoc" method="POST">
     <pre>
 
-                  ID:   <input type="text" name="id" value="${costumer.id}" readonly/>
+                  ID:   <input type="text" name="id" value="${customer.id}" readonly/>
 
-            Fistname:   <input type="text" name="firstName" value="${costumer.firstName}"/>
+            Fistname:   <input type="text" name="firstName" value="${customer.firstName}"/>
 
-            Lastname:   <input type="text" name="lastName" value="${costumer.lastName}"/>
+            Lastname:   <input type="text" name="lastName" value="${customer.lastName}"/>
 
-         <input type=hidden name="fkcostumer" value="${address.fkCostumer}" readonly/>
+         <input type=hidden name="fkcostumer" value="${address.fkcustomer}" readonly/>
               Street:   <input type="text" name="street" value="${address.street}"/>
 
               Number:   <input type="text" name="number" value="${address.number}"/>
@@ -26,22 +26,21 @@
 
                 City:   <input type="text" name="city" value="${address.city}"/>
 
-         <input type=hidden name="fkcostumer" value="${contact.fkcostumer}" readonly />
+         <input type=hidden name="fkcostumer" value="${contact.fkcustomer}" readonly />
         Businessname:   <input type="text" name="businessname" value="${contact.businessname}"/>
 
                Value:   <input type="text" name="value" value="${contact.value}"/>
 
                 Type:   <select name="sort" >
-              <option value="privatePhone">privatePhone</option>
-              <option value="businessPhone">businessPhone</option>
+              <option value="phone">phone</option>
               <option value="mobile">mobile</option>
               <option value="fax">fax</option>
               <option value="email">email</option>
           </select>
 
                 Sort:   <select name="type" >
-              <option value="PRIVATE">PRIVATE</option>
-              <option value="BUSINESS">BUSINESS</option>
+              <option value="privat">private</option>
+              <option value="business">business</option>
           </select>
 
                         <input type="submit" value="save"/>

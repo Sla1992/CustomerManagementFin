@@ -22,13 +22,13 @@
         <th>businessname</th>
     </tr>
 
-    <c:forEach items="${costumers}" var="costumer">
+    <c:forEach items="${costumers}" var="customer">
         <tr>
-            <td>${costumer.id} |</td>
-            <td>${costumer.firstName} |</td>
-            <td>${costumer.lastName} |</td>
-            <td><a href="showUpdate?id=${costumer.id}">update |</a></td>
-            <td><a href="deleteLocations?id=${costumer.id}">delete</a></td>
+            <td>${customer.id} |</td>
+            <td>${customer.firstName} |</td>
+            <td>${customer.lastName} |</td>
+            <td><a href="showUpdate?id=${customer.id}"> update |</a></td>
+            <td><a href="deleteLocations?id=${customer.id}">delete</a></td>
         </tr>
     </c:forEach>
     <c:forEach items="" var="">
