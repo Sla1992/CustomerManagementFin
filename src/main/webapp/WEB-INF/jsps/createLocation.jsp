@@ -28,10 +28,19 @@
 </nav>
 
 <form action="saveLoc" method="POST">
+
+    <div class="d-flex justify-content-center">
+        <h2>Add a new Customer to the table</h2>
+    </div>
+
+    <div class="border-top pt-3">
+    </div>
+
     <div class="d-flex justify-content-center">
         <div>
     <pre>
             Fistname:   <input type="text" name="firstName"/>
+
             Lastname:   <input type="text" name="lastName"/>
     </pre>
         </div>
@@ -39,17 +48,21 @@
         <div>
         <pre>
               Street:   <input type="text" name="street"/>
+
               Number:   <input type="text" name="number"/>
+
                  PLZ:   <input type="text" name="plz"/>
+
                 City:   <input type="text" name="city"/>
         </pre>
         </div>
 
-
         <div>
         <pre>
         Businessname:   <input type="text" name="businessname"/>
+
                Value:   <input type="text" name="value"/>
+
                 Type:   <select name="sort">
               <option value="phone">phone</option>
               <option value="mobile">mobile</option>

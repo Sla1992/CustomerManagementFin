@@ -2,28 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2c4ec48c-c80b-4f3e-8b7d-80a6169bfa4d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bharath/location/controllers/LocationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bharath/location/controllers/LocationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bharath/location/controllers/LocationRESTController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bharath/location/controllers/LocationRESTController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bharath/location/entities/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bharath/location/entities/Address.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bharath/location/entities/Contact.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bharath/location/entities/Contact.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bharath/location/entities/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bharath/location/entities/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bharath/location/entities/Sort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bharath/location/entities/Sort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bharath/location/entities/Type.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bharath/location/entities/Type.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bharath/location/repos/CustomerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bharath/location/repos/CustomerRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bharath/location/service/LocationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bharath/location/service/LocationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bharath/location/service/LocationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bharath/location/service/LocationServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsps/createLocation.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsps/createLocation.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsps/displayLocations.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsps/displayLocations.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsps/displayLocations.jsp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsps/displaycustomers.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsps/displaycustomers.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsps/updateLocations.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsps/updateLocations.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -191,7 +173,16 @@
       <workItem from="1573841291480" duration="99000" />
       <workItem from="1574020878622" duration="6709000" />
       <workItem from="1574182968912" duration="1594000" />
+      <workItem from="1574185667322" duration="1262000" />
     </task>
+    <task id="LOCAL-00001" summary="update and delete does not work">
+      <created>1574185815380</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1574185815380</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -209,5 +200,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="update and delete does not work" />
+    <option name="LAST_COMMIT_MESSAGE" value="update and delete does not work" />
   </component>
 </project>

@@ -29,7 +29,9 @@
 </nav>
 
 <div class="d-flex justify-content-center">
-    <h1>Customers</h1>
+    <h2>Customers</h2>
+</div>
+<div class="border-top pt-3">
 </div>
 
 <div class="d-flex justify-content-center">
@@ -57,7 +59,8 @@
             "customermanagement.customer.id LEFT JOIN " +
             "customermanagement.contact ON " +
             "customermanagement.contact.fkcustomer = " +
-            "customermanagement.customer.id ";
+            "customermanagement.customer.id "+
+            "order by customer.id desc";
 
 
     ResultSet resultset =
