@@ -11,17 +11,34 @@
 <H1>Customers</H1>
 
 <%
-    Connection connection = DriverManager.getConnection(
-            "jdbc:mysql://localhost:3306/kundenverwaltung?useLegacyDatetimeCode=false&serverTimezone=UTC", "root", "sml12345");
+    Connection connection =
+            DriverManager.getConnection("jdbc:mysql://localhost:3306/customermanagement?useLegacyDatetimeCode=false&serverTimezone=UTC", "root", "sml12345");
 
     Statement statement = connection.createStatement();
-    String query = "SELECT kundenverwaltung.costumer.id, kundenverwaltung.costumer.firstName, kundenverwaltung.costumer.lastName, kundenverwaltung.address.street, kundenverwaltung.address.number, kundenverwaltung.address.plz, kundenverwaltung.address.city,kundenverwaltung.contact.businessname,kundenverwaltung.contact.value, kundenverwaltung.contact.type, kundenverwaltung.contact.sort, kundenverwaltung.contact.idcontact, kundenverwaltung.address.idaddress " +
-            "FROM kundenverwaltung.costumer LEFT JOIN kundenverwaltung.address ON kundenverwaltung.address.fkcostumer = kundenverwaltung.costumer.id LEFT JOIN kundenverwaltung.contact ON kundenverwaltung.contact.fkCostumer = kundenverwaltung.costumer.id ";
+    String query = "SELECT customermanagement.customer.id, " +
+            "customermanagement.customer.firstName, " +
+            "customermanagement.customer.lastName, " +
+            "customermanagement.address.street, " +
+            "customermanagement.address.number, " +
+            "customermanagement.address.plz, " +
+            "customermanagement.address.city," +
+            "customermanagement.contact.businessname," +
+            "customermanagement.contact.value, " +
+            "customermanagement.contact.type, " +
+            "customermanagement.contact.sort, " +
+            "customermanagement.contact.idcontact, " +
+            "customermanagement.address.idaddress " +
+            "FROM customermanagement.customer LEFT JOIN " +
+            "customermanagement.address ON " +
+            "customermanagement.address.fkcustomer = " +
+            "customermanagement.customer.id LEFT JOIN " +
+            "customermanagement.contact ON " +
+            "customermanagement.contact.fkcustomer = " +
+            "customermanagement.customer.id ";
 
 
     ResultSet resultset =
             statement.executeQuery(query) ;
-
 %>
 
 <TABLE BORDER="1">
